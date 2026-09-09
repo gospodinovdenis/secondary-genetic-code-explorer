@@ -1,0 +1,41 @@
+{
+  "n_original_rows": 18063,
+  "n_training_rows_after_exact_dedup": 6727,
+  "n_unique_sequences": 6657,
+  "n_classes": 20,
+  "classes": [
+    "Ala",
+    "Arg",
+    "Asn",
+    "Asp",
+    "Cys",
+    "Gln",
+    "Glu",
+    "Gly",
+    "His",
+    "Ile",
+    "Leu",
+    "Lys",
+    "Met",
+    "Phe",
+    "Pro",
+    "Ser",
+    "Thr",
+    "Trp",
+    "Tyr",
+    "Val"
+  ],
+  "species": [
+    "Lamprey",
+    "Rapeseed",
+    "alpaca",
+    "frog",
+    "stickleback",
+    "zebrafish"
+  ],
+  "grouped_holdout_accuracy": 0.8996282527881041,
+  "grouped_holdout_macro_f1": 0.8893127791220291,
+  "test_rows": 1345,
+  "split_note": "20% holdout using GroupShuffleSplit grouped by exact sequence, preventing identical sequences from appearing in both train and test.",
+  "model": "One-hot encoded nucleotide positions 1-85 + sequence length, class-balanced multinomial logistic regression."
+}
